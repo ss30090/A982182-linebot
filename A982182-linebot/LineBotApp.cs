@@ -45,6 +45,10 @@ public class LineBotApp : WebhookApplication
                     {
                         //將資料寫入記憶體池
                         TeachPeople(text);
+                        result = new List<ISendMessage>
+                        {
+                            new TextMessage("不要阿~")
+                        };
                     }
                 }
  
